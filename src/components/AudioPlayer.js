@@ -76,7 +76,11 @@ class AudioPlayer extends Component {
 };
 
 AudioPlayer.propTypes = {
-    podcastUrl: PropTypes.string.isRequired,
+    podcastUrl: PropTypes.string,
+};
+
+AudioPlayer.defaultProps = {
+    podcastUrl: '',
 };
 
 export default AudioPlayer;
