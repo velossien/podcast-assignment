@@ -78,7 +78,7 @@ const podcastDataHandler = {
     }, 
 
     updateEpisode(id, newData) {
-        // NO OP --> Would take an id and the data you want to update for the podcast episode, send an HTTP request, 
+        // Would take an id and the data you want to update for the podcast episode, send an HTTP request, 
         // and return the new data and/or possible error messaging.
         return Promise.resolve(newData);
 
@@ -88,6 +88,6 @@ const podcastDataHandler = {
         // })
         //^ This could emulate what we return if there was an error.
     },
-}
+};
 
 export default podcastDataHandler;

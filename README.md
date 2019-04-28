@@ -1,68 +1,30 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
+# README - Podcast Assignment
+## Installation Instructions
 In the project directory, you can run:
-
+### `npm install`
+Then run:
 ### `npm start`
-
-Runs the app in the development mode.<br>
+This will run the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## 3rd Party Library Choices
+1. **Moment.js:** Fixes some issues with the javascript Date object and is much easier to format dates with.
+2. **node-sass:** Allows the use of the SASS CSS pre-processor.
+3. **react-day-picker:** A simple Date picker that looks nice, is easily implemented, and is still being supported.
+4. **react-dropzone:** A simple dropzone library that is easily implemented and allows easy styling.
 
-### `npm test`
+## Future Improvements
+1. **Error Messaging:** The error messaging at this time is ugly and not user friendly.  Something like a snackbar that pops up and then goes away after a few seconds would be a nicer design.  Also, I would want generic error messages instead of the error message we are receiving from the "backend".
+2. **Image dropzone**  Image dropzone is not as UX friendly as I would like. A more UI/UX friendly design would be to allow the user to preview the image and cancel the upload of the image. Also, providing some image editing tools (cropping, resizing, etc.) and an image URL input would be nice.
+3. **Input Fields** UI would look nicer if the input fields were more responsive.  This could be done by calculating the number of characters in the values and setting the input width to that. Also, I would try to make it so the inputs do not shift when they become editable.
+4. **Add Redux/Flux:** Redux/Flux would help clean up the code as I would not need to be passing down so much state/functions from the parent components to the children.
+5. **Edit Mode UI/UX Improvement Ideas:** 
+    - Add an edit icon next to each input when in edit mode so you can see the normal design of the site as is and the specific inputs only become editable when you click the edit icons next to them.
+    - Add the ability for users to cancel all changes (or certain changes).
+6. **Audio Player:** Create some amazing, stylish customized controls!  I was only able to add in some basic buttons under the native controls.  I would absolutely want to create my own controls so they look nicer.
+7. **Validation:** There is no validation. We don't want users being able to save podcasts without an image or a title, etc.  I would add error messaging in there that points out those fields are required.
+8. **Image Placeholder:** There should be some type of image placeholder while the image loads.  This would just look nicer and could be something like a blurry or vectorized image.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Bugs:
+- There are some outlines that appear around specific elements when they are focused/clicked.
+- Date picker does not highlight the date selected.

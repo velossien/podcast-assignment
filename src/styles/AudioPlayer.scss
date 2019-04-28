@@ -1,3 +1,44 @@
-#audio_player {
-    width: 100%;
+.audio_player {
+  width: 100%;
+}
+
+.audio_player_wrapper {
+  width: 100%;
+}
+
+.audio_control_box {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0.5rem;
+
+  .audio-label {
+    font-size: 0.9rem;
+    margin: 5px;
   }
+
+  button {
+    background-color: #fff;
+    border: 1px solid #003DAD;
+    border-radius: 10px;
+    color: #003DAD;
+    outline: none;
+    padding: 5px 10px;
+    transition: all 0.4s ease;
+
+    &:hover {
+      background-color: #003DAD;
+      border: 1px solid #fff;
+      border-radius: 10px;
+      color: #fff;
+      padding: 5px 10px;
+    }
+  }
+
+  .audio-seek-wrapper {
+    button {
+      margin: 0 2px;
+    }
+  }
+
+}
